@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="245dp"
+    android:layout_height="380dp"
+    android:id="@+id/fragment_signin">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_input_email_or_username"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_input_text"
+        android:textColorHint="@color/baby_red"
+        app:boxBackgroundMode="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_email_or_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/capriola_regular"
+            android:hint="@string/input_email_atau_user_name"
+            android:textColor="@color/dark_red"
+            android:textColorHint="@color/baby_red"
+            android:textSize="13sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_input_password"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/baby_red"
+        android:background="@drawable/shape_input_text"
+        app:boxBackgroundMode="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_input_email_or_username">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/capriola_regular"
+            android:hint="@string/input_password"
+            android:textColor="@color/dark_red"
+            android:textSize="13sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/showHidePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_input_password"
+        app:layout_constraintEnd_toEndOf="@+id/layout_input_password"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="@+id/layout_input_password"
+        app:layout_constraintTop_toBottomOf="@+id/layout_input_email_or_username"
+        app:layout_constraintVertical_bias="0.7"
+        app:srcCompat="@drawable/ic_eye_open" />
+
+    <ImageView
+        android:id="@+id/checkboxRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_input_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/layout_input_password"
+        app:layout_constraintTop_toBottomOf="@+id/layout_input_password"
+        app:srcCompat="@drawable/ic_uncheck" />
+
+    <TextView
+        android:id="@+id/text_rememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/capriola_regular"
+        android:text="@string/ingat_saya"
+        android:textColor="@color/baby_red"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkboxRememberMe"
+        app:layout_constraintEnd_toEndOf="@+id/layout_input_password"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toEndOf="@+id/checkboxRememberMe"
+        app:layout_constraintTop_toTopOf="@+id/checkboxRememberMe" />
+
+    <Button
+        android:id="@+id/button_signin"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:elevation="8dp"
+        android:fontFamily="@font/capriola_regular"
+        android:text="@string/masuk"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/layout_input_email_or_username"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/layout_input_email_or_username"
+        app:layout_constraintTop_toBottomOf="@+id/text_rememberMe"
+        app:layout_constraintVertical_bias="0.48" />
+</androidx.constraintlayout.widget.ConstraintLayout>

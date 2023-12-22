@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="135dp"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/green"
+    app:cardCornerRadius="10dp"
+    app:cardMaxElevation="5dp">
+
+    <ImageView
+        android:id="@+id/iv_buah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="photobuah"
+        android:src="@drawable/jambu"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="8dp"
+        android:text="@string/jusJambu"
+        android:fontFamily="@font/capriola_regular"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_favorit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="8dp"
+        android:background="@drawable/baseline_favorite_border_24"
+        android:contentDescription="@string/btn_favorit" />
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">FruityFit</string>
+    <string name="welcome">Selamat Datang!</string>
+    <string name="user_name">Your Name</string>
+    <string name="textBuah">Daftar Olahan buah</string>
+    <string name="jusJambu">Jus jambu</string>
+    <string name="artikel">Artikel Untukmu</string>
+    <string name="home">Home</string>
+    <string name="fruit_detect">Fruit detect</string>
+    <string name="konsultasi">Konsultasi\n</string>
+    <string name="chat_bot">Chat\n</string>
+    <string name="Protein_tv">Protein</string>
+    <string name="kandungan_protein">0</string>
+    <string name="calories_tv">Calories</string>
+    <string name="kandungan_calori">0</string>
+    <string name="fat_tv">Fat</string>
+    <string name="kandungan_fat">0</string>
+    <string name="Carbs_tv">Carbs</string>
+    <string name="carbs">0</string>
+    <string name="iniadalah">Ini Adalah:</string>
+    <string name="fruitname">Nama Buah</string>
+    <string name="desc">Deskripsi Buah :</string>
+    <string name="isi_desc">Bla Bla Bla\nBla Bla Bla\nBla Bla Bla</string>
+    <string name="add_fav">Add to Favorite</string>
+    <string name="tkt_kesegaran">Tingkat Kesegaran :</string>
+    <string name="kesegaran">Segar</string>
+
+    ///camchooser
+    <string name="pertanyaan">kamu mau ngapain?</string>
+    <string name="klasifikasi_btn">Klasifikasi Buah</string>
+    <string name="kesegaran_btn">Kesegaran Buah</string>
+
+    //splash
+    <string name="welcoming_text2">di FruityFit</string>
+    <string name="welcoming_text1">Selamat Datang</string>
+    <string name="skip_button">Skip</string>
+    <string name="text1_second_splash">Mulailah</string>
+    <string name="text2_second_splash">Hidup Sehat</string>
+    <string name="text3_second_splash">dari sekarang dengan menggunakan aplikasi yang kami sediakan.</string>
+    <string name="text1_third_splash">Mari Kita</string>
+    <string name="text2_third_splash">Mulai</string>
+    <string name="text3_third_splash">Semoga aplikasi ini sangat membantu Anda.\n</string>
+    <string name="welcoming_text3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+
+    //login
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+    <string name="input_email_atau_user_name">Email atau User Name</string>
+    <string name="input_password">Password</string>
+    <string name="ingat_saya">Ingat Saya</string>
+    <string name="input_email">Email</string>
+    <string name="input_username">User Name</string>
+    <string name="welcome_home">Selamat Datang!</string>
+    <string name="name_sample">Melisa Wijaya</string>
+    <string name="premium_tag">Premium Member</string>
+    <string name="poin_user">400 Poin</string>
+    <string name="img_artikel">Article Preview</string>
+    <string name="article_title">Article Title</string>
+    <string name="btn_favorit">btn_favorit</string>
+    <string name="read_more">Baca Selengkapnya</string>
+    <string name="artikel_untukmu">Artikel Untukmu</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="email_user">melisa.wijaya@ti.ukdw.ac.id</string>
+    <string name="edit_profil">Edit Profil</string>
+</resources>

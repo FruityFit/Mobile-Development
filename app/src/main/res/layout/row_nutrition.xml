@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="15dp"
+    app:cardMaxElevation="5dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/pinK_100">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/Protein_tv"
+        android:fontFamily="@font/capriola_regular"
+        android:textColor="@color/pink_200"
+        android:textStyle="bold"
+        android:layout_gravity="center|top"
+        android:padding="8dp"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kandungan_protein"
+        android:textColor="@color/pink_200"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:textSize="20sp"/>
+
+
+</androidx.cardview.widget.CardView>

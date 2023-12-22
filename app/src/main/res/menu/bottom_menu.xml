@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/bottom_consultation"
+        android:icon="@drawable/button_chat_consultation"
+        android:title="@string/konsultasi" />
+    <item
+        android:id="@+id/bottom_chatbot"
+        android:icon="@drawable/baseline_chat_24"
+        android:title="@string/chat_bot" />
+    <item
+        android:id="@+id/camChooserFragment"
+        android:icon="@drawable/baseline_camera_enhance_24"
+        android:title="@string/fruit_detect" />
+
+
+</menu>

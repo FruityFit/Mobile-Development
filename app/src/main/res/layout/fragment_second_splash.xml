@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_second_splash">
+
+    <Button
+        android:id="@+id/button_skip_second_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/capriola_regular"
+        android:padding="0dp"
+        android:text="@string/skip_button"
+        android:textColor="@color/dark_red"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.2"
+        app:layout_constraintStart_toEndOf="@+id/image2_second_splash"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <ImageView
+        android:id="@+id/image_second_splash"
+        android:layout_width="234dp"
+        android:layout_height="228dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.337"
+        app:srcCompat="@drawable/image_second_splash" />
+
+    <TextView
+        android:id="@+id/text1_second_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/capriola_regular"
+        android:text="@string/text1_second_splash"
+        android:textColor="@color/dark_red"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/image_second_splash"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/image_second_splash"
+        app:layout_constraintTop_toBottomOf="@+id/image_second_splash" />
+
+    <TextView
+        android:id="@+id/text2_second_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/capriola_regular"
+        android:text="@string/text2_second_splash"
+        android:textColor="@color/dark_red"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/text1_second_splash"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text1_second_splash"
+        app:layout_constraintTop_toBottomOf="@+id/text1_second_splash" />
+
+    <ImageView
+        android:id="@+id/dot_second_splash"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text2_second_splash"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text2_second_splash"
+        app:layout_constraintTop_toBottomOf="@+id/text3_second_splash"
+        app:srcCompat="@drawable/dot_second_splash" />
+
+    <ImageView
+        android:id="@+id/image2_second_splash"
+        android:layout_width="70dp"
+        android:layout_height="150dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@+id/image_second_splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/image_second_splash"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/image2_first_splash" />
+
+    <TextView
+        android:id="@+id/text3_second_splash"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/capriola_regular"
+        android:text="@string/text3_second_splash"
+        android:textColor="@color/dark_red"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/text2_second_splash"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text2_second_splash"
+        app:layout_constraintTop_toBottomOf="@+id/text2_second_splash" />
+</androidx.constraintlayout.widget.ConstraintLayout>

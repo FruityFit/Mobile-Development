@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    >
+
+    <ImageView
+        android:id="@+id/logo_login"
+        android:layout_width="260dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079"
+        app:srcCompat="@drawable/horizontal_logo_white" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_loginPage"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" >
+
+        <com.google.android.material.tabs.TabLayout
+            style="@style/CustomTabBarBackGround"
+            android:id="@+id/tabs"
+            android:elevation="5dp"
+            android:layout_width="245dp"
+            app:tabSelectedTextColor="@color/red"
+            android:layout_height="40dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="30dp" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager_login"
+            android:layout_width="245dp"
+            android:layout_height="380dp"
+            android:layout_gravity="center|bottom" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/component_login_page"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:alpha="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/component_login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context=".HomeFragment">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:contentDescription="logo_app"
+        android:src="@drawable/horizontal_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_displayUser"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126">
+
+
+        <ImageView
+            android:id="@+id/background_profile_home"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/shape_background_profile" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="22dp"
+            app:cardCornerRadius="25dp">
+
+            <ImageView
+                android:id="@+id/profile_home"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/jambu" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/background_poin"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:src="@drawable/shape_background_poin"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="20dp"/>
+
+        <ImageView
+            android:id="@+id/ic_poinUser"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="75dp"
+            android:src="@drawable/ic_poin_user" />
+
+        <TextView
+            android:id="@+id/poin_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:textColor="@color/white"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/capriola_regular"
+            android:text="@string/poin_user"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/welcome_text_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="18dp"
+            android:fontFamily="@font/capriola_regular"
+            android:text="@string/welcome_home"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/capriola_regular"
+            android:text="@string/name_sample"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/premium_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="41dp"
+            android:fontFamily="@font/capriola_regular"
+            android:text="@string/premium_tag"
+            android:textSize="11sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/setting_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/setting_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/article_for_u"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/capriola_regular"
+        android:text="@string/artikel_untukmu"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/cardView_displayUser"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardView_displayUser"
+        app:layout_constraintTop_toBottomOf="@+id/cardView_displayUser" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_artikel"
+        android:layout_width="365dp"
+        android:layout_height="413dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/article_for_u"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/item_artikel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

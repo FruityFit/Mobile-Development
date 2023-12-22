@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.adamcoding.prototype.ui.main.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/camChooserFragment"
+        android:name="com.adamcoding.prototype.ui.main.camchooser.CamChooserFragment"
+        android:label="fragment_cam_chooser"
+        tools:layout="@layout/fragment_cam_chooser" >
+        <action
+            android:id="@+id/action_camChooserFragment_to_fruitResultActivity"
+            app:destination="@id/fruitResultActivity" />
+        <action
+            android:id="@+id/action_camChooserFragment_to_freshnesActivity"
+            app:destination="@id/freshnesActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/freshnesActivity"
+        android:name="com.adamcoding.prototype.ui.freshness.FreshnesActivity"
+        android:label="activity_freshnes"
+        tools:layout="@layout/activity_freshnes" >
+        <argument
+            android:name="data"
+            app:argType="com.adamcoding.prototype.data.remote.response.PredictResponse"
+            app:nullable="true" />
+        <argument
+            android:name="imageUri"
+            app:argType="android.net.Uri"
+            app:nullable="true" />
+        <argument
+            android:name="freshStatus"
+            app:argType="boolean"
+            android:defaultValue="true" />
+    </activity>
+    <activity
+        android:id="@+id/fruitResultActivity"
+        android:name="com.adamcoding.prototype.ui.fruit_result.FruitResultActivity"
+        android:label="activity_fruit_result"
+        tools:layout="@layout/activity_fruit_result" >
+        <argument
+            android:name="data"
+            app:argType="com.adamcoding.prototype.data.remote.response.PredictResponse"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="imageUri"
+            app:argType="android.net.Uri"
+            app:nullable="true" />
+    </activity>
+</navigation>
